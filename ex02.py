@@ -15,7 +15,7 @@ penultimo=0
 termo = 1
 
 
-for i in range(0,n):
+for i in range(n):
   print(termo, ' ', end='')
   ultimo = penultimo
   penultimo = termo
