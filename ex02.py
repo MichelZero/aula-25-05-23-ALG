@@ -10,17 +10,14 @@
 
 n = int(input("Digite a quantidade de termos desejada: "))
 
-ultimo=1
-penultimo=1
-termo = 0
+ultimo=0
+penultimo=0
+termo = 1
 
-if (n==1):
-    print("0")
-else:
-    print('01', end='')
-    for i in range(2,n):
-        termo = ultimo + penultimo
-        penultimo = ultimo
-        ultimo = termo
-        print(termo, end='')
+
+for i in range(0,n):
+  print(termo, ' ', end='')
+  ultimo = penultimo
+  penultimo = termo
+  termo = ultimo + penultimo
 
