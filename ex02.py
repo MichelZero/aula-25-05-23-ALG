@@ -14,10 +14,13 @@ ultimo=0
 penultimo=0
 termo = 1
 
-
-for i in range(n):
-  print(termo, ' ', end='')
-  ultimo = penultimo
-  penultimo = termo
-  termo = ultimo + penultimo
+if n == 1:
+  print('0',' ', end='')
+else:
+  print('0',' ', end='')
+  for i in range(n-1):
+    print(termo, ' ', end='')
+    ultimo = penultimo
+    penultimo = termo
+    termo = ultimo + penultimo
 
